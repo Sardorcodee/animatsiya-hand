@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7575f0;
+}
+
+.sichqoncha {
+  width: 200px;
+  height: 300px;
+  border: 5px solid white;
+  border-radius: 100px;
+  position: relative;
+}
+.sichqoncha::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  left: 70px;
+  top: 30px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: anim;
+          animation-name: anim;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+@-webkit-keyframes anim {
+  100% {
+    top: 180px;
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  0% {
+    opacity: 11;
+  }
+}
+
+@keyframes anim {
+  100% {
+    top: 180px;
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  0% {
+    opacity: 11;
+  }
+}/*# sourceMappingURL=style.css.map */

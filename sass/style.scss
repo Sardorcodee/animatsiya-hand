@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7575f0;
+}
+// .yurak {
+//     color: red;
+//     animation-name: aylan;
+//    font-size: 10em;
+//     border-radius: 50%;
+/     animation-duration:0.5s;
+//     animation-timing-function: ease-in;
+//     animation-delay: 0s;
+//     animation-iteration-count: infinite;
+//     animation-fill-mode: both;
+//     animation-direction: alternate;
+// }
+// @keyframes aylan {
+//     0%{
+//         border: 0;
+//     }
+
+//     100%{
+//        font-size: 20em;
+
+//     }
+// }
+.sichqoncha {
+  width: 200px;
+  height: 300px;
+  border: 5px solid white;
+  border-radius: 100px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    left: 70px;
+    top: 30px;
+    animation-duration:1s;
+    animation-name: anim;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    
+    animation-direction:normal;
+  }
+}
+@keyframes anim {
+  100% {
+    top: 180px;
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  0% {
+    opacity: 11;
+  }
+}
